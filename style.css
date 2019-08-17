@@ -1,0 +1,125 @@
+h1, h2, h3 {
+    text-align: center;
+}
+.menu {
+    background: #FF9800;
+    display: flex;
+    justify-content: center;   
+    text-align: center;
+}
+.menu div {
+    align-items: center;
+    color: white;
+    padding: 20px;
+}
+.menu a {
+    color: white;
+    font-size: 18px;
+}
+.topnews {
+    display: flex;
+}
+.toplist {
+    width: 30%;
+    background:#3F51B5;
+    color: white;
+}
+.topitems {
+    display: flex;
+    border: 1px solid black;
+}
+.topitems p {
+    padding: 8px;
+}
+.slider {
+    width: 70%;
+} 
+.livescore {
+    border: 1px solid grey;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.livescore div {
+    display: flex;
+    align-items: center;
+}
+.trends {
+    float: left;
+    padding: 5px;
+    width: 232px;
+}
+.trends p {
+    word-wrap: break-word;
+}
+.topteams {
+    float: right;
+    border: 1px solid black;
+    width: 280px;
+    background: #4056B5;
+    color: white;
+}
+.teamsitem {
+    display: flex;
+    justify-content: center;
+}
+.teamsitem p {
+    margin-left: 20px;
+    font-size: 17px;
+}
+.teamtitles p {
+    font-size: 19px;
+}
+.teamhead {
+    background: red;
+    width: 280px;
+    text-align: center;
+    height: 30px;
+    font-size: 20px;
+    color: white;
+}
+.clear {
+    clear: left;
+}
+.footer {
+    background: black;
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.allteams {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+}
+.allteams div {
+    background: red;
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+}
+.players {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 10px;
+}
+.players img {
+    border-radius: 50%;
+}
+.players div:hover {
+    background:#3F51B5;
+    color: white;
+    padding-top: 20px;
+}
+@media (min-width: 600px){
+    .topitems .menu .topnews .livescore div .teamsitem {
+        display: flex;
+        flex-direction: column;
+    }
+}
